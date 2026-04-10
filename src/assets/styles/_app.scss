@@ -1,0 +1,78 @@
+@use 'variables' as *;
+
+.app {
+  background-color: $color-bg !important;
+
+  &__main {
+    background-color: $color-bg !important;
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px 40px;
+  }
+}
+
+// Header
+.header {
+  background-color: $color-surface;
+  border-bottom: 1px solid $color-border;
+  padding: 0 24px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+
+  &__brand {
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-blue;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+  }
+}
+
+// Tabs
+.tabs {
+  display: inline-flex;
+  background-color: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  padding: 4px;
+  gap: 4px;
+  margin: 24px 0 16px;
+
+  &__item {
+    padding: 7px 20px;
+    border: none;
+    border-radius: 7px;
+    background: transparent;
+    color: $color-text-muted;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: $color-text;
+    }
+
+    &--active {
+      background-color: $color-blue;
+      color: #fff;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// Panel
+.panel {
+  background-color: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  padding: 24px;
+  min-height: 320px;
+}

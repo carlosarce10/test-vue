@@ -1,0 +1,97 @@
+@use 'variables' as *;
+
+.consulta {
+  padding: 8px 0;
+
+  &__search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    max-width: 480px;
+  }
+
+  &__search-input {
+    flex: 1;
+  }
+
+  &__search-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    background-color: $color-blue;
+    color: #fff;
+    border: none;
+    border-radius: $radius;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: $color-blue-hover;
+    }
+  }
+
+  &__hint {
+    font-size: 13px;
+    color: $color-text-muted;
+    margin: 0;
+  }
+
+  &__table-wrapper {
+    background-color: $color-surface;
+    border: 1px solid $color-border;
+    border-radius: $radius;
+    overflow: hidden;
+  }
+
+  &__table {
+    background-color: transparent !important;
+  }
+
+  &__expanded-row {
+    background-color: $color-bg;
+  }
+
+  &__expanded-cell {
+    padding: 16px 24px !important;
+  }
+
+  &__aplicativos-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: $color-text-muted;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+  }
+
+  &__aplicativos-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    color: $color-text;
+
+    th {
+      text-align: left;
+      font-weight: 600;
+      color: $color-text-muted;
+      padding: 6px 12px;
+      border-bottom: 1px solid $color-border;
+    }
+
+    td {
+      padding: 6px 12px;
+      border-bottom: 1px solid $color-border;
+    }
+  }
+
+  &__aplicativos-empty {
+    text-align: center;
+    color: $color-text-muted;
+    padding: 12px !important;
+  }
+}

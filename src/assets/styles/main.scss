@@ -1,0 +1,11 @@
+@use 'variables' as *;
+@use 'app';
+@use 'buttons';
+@use 'consulta';
+@use 'sweetalert';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
