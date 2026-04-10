@@ -1,0 +1,59 @@
+@use 'variables' as *;
+
+.swal2-popup {
+  border-radius: $radius !important;
+  font-family: inherit !important;
+  padding: 28px !important;
+}
+
+.swal2-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: $color-text !important;
+}
+
+.swal2-html-container {
+  font-size: 13px !important;
+  color: $color-text-muted !important;
+}
+
+.swal2-styled {
+  border-radius: 7px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  padding: 8px 20px !important;
+  box-shadow: none !important;
+
+  &.swal2-confirm {
+    background-color: $color-blue !important;
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(91, 141, 238, 0.25) !important;
+    }
+
+    &:hover {
+      background-color: $color-blue-hover !important;
+    }
+  }
+
+  &.swal2-cancel {
+    background-color: transparent !important;
+    color: $color-text-muted !important;
+    border: 1px solid $color-border !important;
+
+    &:hover {
+      background-color: $color-bg !important;
+    }
+  }
+}
+
+// Toast
+.swal2-toast {
+  border-radius: $radius !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
+
+  .swal2-title {
+    font-size: 13px !important;
+    color: $color-text !important;
+  }
+}
